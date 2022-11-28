@@ -21,6 +21,8 @@ setup(
     extras_require={
         "dev": [
             "pytest>=3.7",
+            "wheel==0.38.4",
+            "twine==4.0.1",
         ]
     }
 )
