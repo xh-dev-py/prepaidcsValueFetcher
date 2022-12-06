@@ -1,3 +1,4 @@
+import sys
 
 
 def fetch_value(mobile_no: str, password: str):
@@ -24,3 +25,8 @@ def fetch_value(mobile_no: str, password: str):
 
     gbRemain = float(BeautifulSoup(res.text, "html.parser").select("tr")[-1].select("td")[1].text.strip().split(" ")[0])
     return gbRemain
+
+if __name__ == "__main__":
+    mobile_no = sys.argv[1]
+    password = sys.argv[2]
+    print(f"{fetch_value(mobile_no, password)} GB")

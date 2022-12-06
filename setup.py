@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='prepaidcsValueFetcher',
-    version='0.0.1',
+    version='0.0.3',
     description='prepaidcs value fetcher',
     py_modules=['prepaidcsValueFetcher'],
     package_dir={'': 'src'},
